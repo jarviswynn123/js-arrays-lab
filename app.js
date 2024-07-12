@@ -267,12 +267,12 @@ Hint: Be sure to declare and initialize the total variable before the iterations
 Complete Exercise 15 in the space below:
 */
 
-sum = 0
-for (i = 0; i < numArrays; i++) {
-   for (j = 0; j < i; i++) {
-      console.log(j)
+total = 0
+for (i = 0; i < numArrays.length; i++) {
+   for (j = 0; j < numArrays[i].length; j++) {
+      total += numArrays[i][j]
    }
 }
 
 
-// console.log('Exercise 15 result:\n', total);
+console.log('Exercise 15 result:\n', total);
